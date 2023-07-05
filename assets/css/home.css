@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Rajdhani:wght@500&family=Roboto+Mono:wght@300&display=swap');
+
+body{
+    margin:0%;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color: grey;
+}
+
+.create-contact{
+
+    text-align: center;
+    
+}
+
+.box-style{
+    
+    margin-left: 25%;
+    display: flex;
+    background-color: rgb(19, 228, 208);
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    border: 3px solid white;
+    row-gap: 10px;
+    transition:.8s;
+
+}
+.box-style:hover {background: #666;}
+
+
+.input-box{
+    margin-left: 30%;
+        
+}
+
+.input-shell{
+
+    border-bottom: #666 3px solid;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: left 1px;
+    
+}
+
+.btn-one{
+    border-bottom: #666 3px solid;
+    border-top: 2px;
+    border-right: 1px;
+    border-left: 1px;
+    border-radius:3px;
+    color: rgb(152, 73, 51);
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(216, 212, 212);
+}
+
+.delete-btn{
+    padding-left: 10%;
+    
+}

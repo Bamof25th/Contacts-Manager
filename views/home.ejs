@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= locals.title %>
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/1cb39d4c86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="page-heading"> 
+        <i class="fa-solid fa-user "></i>
+        Contact List
+     </h1>
+    
+
+    <div class = "create-contact">
+        <Ul>
+          <% for( let i of contact_List){ %>
+                 <div class = " box-style">
+                    <p><%= i.name %> </p>
+                    <p><%= i.phone %></p>
+                
+                <div class="delete-btn">
+                    <a href="/delete-contact/?id=<%= i._id %>">
+                        <i class="fa-solid fa-xmark fa-sm"></i>
+                    </a>
+                </div>
+                </div>
+          <% } %>
+        </Ul>
+    </div>
+
+    <form action="/create-contact" method="POST" class="input-box">
+ 
+        <input class="input-shell" type="text" name="name" placeholder="Enter Name" required>
+        <input class="input-shell" type="number" name="phone" placeholder="Enter phone" required>
+         
+        <button type="submit" class="btn-one">CREATE</button>
+
+    </form>
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>
